@@ -1,0 +1,472 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.8;
+}
+
+.top-nav {
+    padding: 2rem;
+    text-align: center;
+    border-bottom: 2px solid #d1d5db;
+    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+    width: 100%;
+}
+
+.top-nav a {
+    text-decoration: none;
+    color: #374151;
+    margin: 0 1.5rem;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.top-nav a:hover {
+    color: #1f2937;
+}
+
+header {
+    background: linear-gradient(180deg, #ffffff 0%, #f9fafb 100%);
+    padding: 3rem 2rem;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.header-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header-content img {
+    width: 140px;
+    height: 140px;
+    border-radius: 8px;
+    object-fit: cover;
+    margin-bottom: 1.5rem;
+}
+
+.header-content h1 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    letter-spacing: -0.3px;
+}
+
+.header-content .title {
+    color: #666;
+    margin-bottom: 0rem;
+    font-size: 0.95rem;
+    font-weight: 400;
+}
+
+.header-content .affiliation {
+    color: #666;
+    margin-bottom: 0.8rem;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.header-content .positions {
+    margin-bottom: 1.5rem;
+}
+
+.header-content .positions p {
+    color: #6b7280;
+    font-size: 0.85rem;
+    margin: 0.3rem 0;
+    font-weight: 400;
+}
+
+.header-content .bio {
+    color: #1a1a1a;
+    font-size: 1rem;
+    line-height: 1.8;
+    max-width: 500px;
+    margin: 0 auto;
+    font-weight: 500;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 3rem 2rem;
+}
+
+section {
+    margin-bottom: 5rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    letter-spacing: -0.2px;
+    color: #111827;
+    border-bottom: 2px solid #d1d5db;
+    padding-bottom: 0.75rem;
+}
+
+.item {
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+    background-color: #f3f4f6;
+    border-radius: 6px;
+}
+
+.item h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    color: #111827;
+}
+
+.item .meta {
+    color: #6b7280;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    font-weight: 400;
+}
+
+.item p {
+    color: #374151;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    color: #6b7280;
+    font-size: 0.8rem;
+    border-top: 1px solid #e5e7eb;
+    margin-top: 3rem;
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+
+.logo-item {
+    height: 100px;
+    width: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.logo-item:nth-child(2) {
+    height: 170px;
+    width: 250px;
+}
+
+.logo-item:hover {
+    background-color: transparent;
+}
+
+.logo-item img {
+    max-height: 90px;
+    max-width: 130px;
+    object-fit: contain;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.logo-item:nth-child(2) img {
+    max-height: 160px;
+    max-width: 240px;
+}
+
+.logo-item:hover img {
+    opacity: 1;
+}
+
+.news-item {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    padding: 1rem;
+    background-color: #f3f4f6;
+    border-radius: 6px;
+}
+
+.news-date {
+    flex-shrink: 0;
+    color: #6b7280;
+    font-weight: 500;
+    font-size: 0.85rem;
+    min-width: 80px;
+}
+
+.news-content h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+    color: #111827;
+}
+
+.news-location {
+    color: #6b7280;
+    font-size: 0.85rem;
+    margin-bottom: 0.5rem;
+    font-style: italic;
+}
+
+.news-content p {
+    color: #374151;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .top-nav {
+        padding: 1.5rem 1rem;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .top-nav a {
+        margin: 0;
+        font-size: 0.85rem;
+    }
+
+    .header-content {
+        padding: 0 1rem;
+    }
+
+    .header-content img {
+        width: 130px;
+        height: 130px;
+        margin-bottom: 1.3rem;
+    }
+
+    .header-content h1 {
+        font-size: 2rem;
+    }
+
+    .header-content .title {
+        font-size: 0.9rem;
+    }
+
+    .header-content .affiliation {
+        font-size: 0.85rem;
+    }
+
+    .header-content .positions p {
+        font-size: 0.8rem;
+    }
+
+    .header-content .bio {
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 2rem 1rem;
+    }
+
+    section {
+        margin-bottom: 3rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .item {
+        padding: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .item h3 {
+        font-size: 0.95rem;
+    }
+
+    .item .meta {
+        font-size: 0.8rem;
+    }
+
+    .item p {
+        font-size: 0.85rem;
+    }
+
+    .footer-logos {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        flex-wrap: wrap;
+        margin-bottom: 1.5rem;
+    }
+
+    .logo-item {
+        height: 90px;
+        width: 130px;
+    }
+
+    .logo-item:nth-child(2) {
+        height: 110px;
+        width: 160px;
+    }
+
+    .logo-item img {
+        max-height: 80px;
+        max-width: 120px;
+    }
+
+    .logo-item:nth-child(2) img {
+        max-height: 100px;
+        max-width: 150px;
+    }
+
+    .news-item {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 0.8rem;
+    }
+
+    .news-date {
+        min-width: 70px;
+        font-size: 0.8rem;
+    }
+
+    .news-content h3 {
+        font-size: 0.9rem;
+    }
+
+    .news-content p {
+        font-size: 0.8rem;
+    }
+
+    footer p {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-nav {
+        padding: 1.2rem 0.8rem;
+        gap: 1rem;
+    }
+
+    .top-nav a {
+        font-size: 0.8rem;
+    }
+
+    .header-content img {
+        width: 110px;
+        height: 110px;
+        margin-bottom: 1rem;
+    }
+
+    .header-content h1 {
+        font-size: 1.6rem;
+        margin-bottom: 0.1rem;
+    }
+
+    .header-content .title {
+        font-size: 0.85rem;
+    }
+
+    .header-content .affiliation {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .header-content .positions p {
+        font-size: 0.75rem;
+        margin: 0.2rem 0;
+    }
+
+    .header-content .bio {
+        font-size: 0.85rem;
+    }
+
+    main {
+        padding: 1.5rem 1rem;
+    }
+
+    section {
+        margin-bottom: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.1rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .item {
+        padding: 0.7rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .item h3 {
+        font-size: 0.9rem;
+    }
+
+    .item .meta {
+        font-size: 0.75rem;
+    }
+
+    .footer-logos {
+        gap: 1.5rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .logo-item {
+        height: 85px;
+        width: 115px;
+    }
+
+    .logo-item:nth-child(2) {
+        height: 105px;
+        width: 145px;
+    }
+
+    .logo-item img {
+        max-height: 75px;
+        max-width: 105px;
+    }
+
+    .logo-item:nth-child(2) img {
+        max-height: 95px;
+        max-width: 135px;
+    }
+
+    .news-item {
+        gap: 0.8rem;
+        padding: 0.7rem;
+    }
+
+    .news-date {
+        min-width: 60px;
+        font-size: 0.75rem;
+    }
+
+    .news-content h3 {
+        font-size: 0.85rem;
+    }
+
+    .news-content p {
+        font-size: 0.75rem;
+    }
+
+    footer p {
+        font-size: 0.7rem;
+    }
+}

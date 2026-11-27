@@ -1,53 +1,49 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - Hakim Si-Mohammed</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    <nav class="top-nav">
-        <a href="./index.html">Home</a>
-        <a href="./publications.html">Publications</a>
-        <a href="./projects.html">Projects</a>
-        <a href="./teaching.html">Teaching</a>
-    </nav>
-    
-    <main>
-        <section id="publications">
-            <h2>Publications</h2>
-            <div class="item">
-                <h3>Publication Title 1</h3>
-                <p class="meta">Conference/Journal, 2024</p>
-                <p>Description of your publication...</p>
-            </div>
-            <div class="item">
-                <h3>Publication Title 2</h3>
-                <p class="meta">Conference/Journal, 2023</p>
-                <p>Description of your publication...</p>
-            </div>
-            <div class="item">
-                <h3>Publication Title 3</h3>
-                <p class="meta">Conference/Journal, 2023</p>
-                <p>Description of your publication...</p>
-            </div>
-        </section>
-    </main>
+---
+layout: default
+title: Publications
+description: Publications of Hakim Si-Mohammed on Brain-Computer Interfaces, EEG, Virtual and Augmented Reality.
+---
+{% assign pubs = site.data.publications %}
+{% assign n_journal = pubs | where: "type", "journal" | size %}
+{% assign n_conf = pubs | where: "type", "conference" | size %}
+{% assign n_other = pubs | where: "type", "other" | size %}
 
-    <footer>
-        <div class="footer-logos">
-            <a href="https://www.univ-lille.fr" target="_blank" class="logo-item">
-                <img src="./img/ulille-logo.png" alt="University of Lille">
-            </a>
-            <a href="https://www.cristal.univ-lille.fr" target="_blank" class="logo-item">
-                <img src="./img/cristal-logo.jpg" alt="CRIStAL Laboratory">
-            </a>
-            <a href="https://scv.univ-lille.fr" target="_blank" class="logo-item">
-                <img src="./img/scv-logo.png" alt="SCV Research Federation">
-            </a>
-        </div>
-        <p>&copy; 2024 Hakim Si-Mohammed. All rights reserved.</p>
-    </footer>
-</body>
-</html>
+<header class="page-head">
+    <h1>Publications</h1>
+    <p class="lead">Selected journal articles, conference papers, book chapters and patents. The complete list is available on <a href="https://scholar.google.com/citations?user=UEKJj4IAAAAJ" target="_blank" rel="noopener">Google Scholar</a> and <a href="https://hal.science/search/index/?q=authIdHal_s:hakim-simohammed" target="_blank" rel="noopener">HAL</a>.</p>
+</header>
+
+<div class="filters" role="group" aria-label="Filter by type">
+    <button type="button" data-filter="all" aria-pressed="true">All <span>{{ pubs | size }}</span></button>
+    <button type="button" data-filter="journal" aria-pressed="false">Journals <span>{{ n_journal }}</span></button>
+    <button type="button" data-filter="conference" aria-pressed="false">Conferences <span>{{ n_conf }}</span></button>
+    <button type="button" data-filter="other" aria-pressed="false">Other <span>{{ n_other }}</span></button>
+</div>
+
+{% assign by_year = pubs | group_by: "year" %}
+{% for y in by_year %}
+<section class="pub-year">
+    <h2>{{ y.name }}</h2>
+    <div class="pub-list">
+        {% for p in y.items %}
+        {% include pub.html pub=p %}
+        {% endfor %}
+    </div>
+</section>
+{% endfor %}
+
+<script>
+(function () {
+    var buttons = document.querySelectorAll('.filters button');
+    var pubs = document.querySelectorAll('.pub');
+    var years = document.querySelectorAll('.pub-year');
+    buttons.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            var f = btn.dataset.filter;
+            buttons.forEach(function (b) { b.setAttribute('aria-pressed', b === btn ? 'true' : 'false'); });
+            pubs.forEach(function (p) { p.hidden = f !== 'all' && p.dataset.type !== f; });
+            years.forEach(function (y) { y.hidden = !y.querySelector('.pub:not([hidden])'); });
+        });
+    });
+})();
+</script>

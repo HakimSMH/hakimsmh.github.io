@@ -1,0 +1,89 @@
+# ------------------------------------------------------------------
+#  Site settings: edit your profile information here.
+#  (Restart `jekyll serve` after changing this file.)
+# ------------------------------------------------------------------
+
+title: Hakim Si-Mohammed
+description: >-
+  Hakim Si-Mohammed, Associate Professor at the University of Lille (CRIStAL),
+  Head of the BCI & Neuroprosthetics Axis of Lille NeurotechS. Research on
+  EEG-based Brain-Computer Interfaces, neuroadaptive systems and Virtual /
+  Augmented Reality.
+url: "https://hakimsmh.github.io"
+baseurl: ""
+lang: en
+
+author:
+  name: Hakim Si-Mohammed
+  photo: /img/photo.jpg
+  # Lines shown under your name in the sidebar
+  # (your position first, then your main responsibilities, most important first)
+  roles:
+    - Associate Professor of Computer Science, University of Lille
+    - Deputy Director of the CNRS Research Federation SCV
+    - Head of the BCI & Neuroprosthetics Axis, Lille NeurotechS Institute
+    - Secretary General of CORTICO
+    - Member of the CRIStAL lab, BCI team
+  email: hakim.simohammed@univ-lille.fr
+  phone: "+33 3 20 43 41 86"
+  # Office (shown before the address), e.g. "Office 3A12, ESPRIT building"
+  office: "Office S1.51, ESPRIT building"
+  address:
+    - CRIStAL, Université de Lille
+    - Campus Cité Scientifique
+    - 59650 Villeneuve-d'Ascq, France
+  # Public CV PDF: put the file in files/ and uncomment the line below to show a
+  # "Download CV" button. Use a version without personal phone number / e-mail.
+  # cv_pdf: /files/CV_HakimSMH.pdf
+  # Profile links (leave empty or delete a line to hide it)
+  links:
+    - label: Google Scholar
+      url: https://scholar.google.com/citations?user=UEKJj4IAAAAJ
+    - label: ORCID
+      url: https://orcid.org/0000-0002-6056-3089
+    - label: HAL
+      url: https://hal.science/search/index/?q=authIdHal_s:hakim-simohammed
+    - label: GitHub
+      url: https://github.com/HakimSMH
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/hakimsmh
+
+# Main navigation (order = display order)
+nav:
+  - title: About
+    url: /
+  - title: Publications
+    url: /publications.html
+  - title: Research
+    url: /research.html
+  - title: Teaching
+    url: /teaching.html
+  - title: CV
+    url: /cv.html
+
+# Logos in the footer
+affiliations:
+  - name: University of Lille
+    url: https://www.univ-lille.fr
+    logo: /img/logos/ulille-logo.png
+    logo_dark: /img/logos/ulille-logo-dark.png
+    height: 34   # px, tuned so the logos look about the same size
+  - name: CRIStAL laboratory
+    url: https://www.cristal.univ-lille.fr
+    logo: /img/logos/cristal-logo.svg
+    logo_dark: /img/logos/cristal-logo-dark.svg
+    height: 46
+  - name: SCV Research Federation
+    url: https://fr-scv.univ-lille.fr
+    logo: /img/logos/scv-logo.png
+    logo_dark: /img/logos/scv-logo-dark.png
+    height: 42
+
+markdown: kramdown
+exclude:
+  - README.md
+  - EDITING.md
+  - Gemfile
+  - Gemfile.lock
+  - .claude
+  - img/photo.png

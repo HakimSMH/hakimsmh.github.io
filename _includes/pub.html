@@ -1,0 +1,29 @@
+{% assign p = include.pub %}
+{% assign me = "H. Si-Mohammed" %}
+{% assign me_bold = "<strong>" | append: me | append: "</strong>" %}
+<article class="pub{% if include.with_image and p.image %} pub-media{% endif %}" data-type="{{ p.type }}">
+    {% if include.with_image and p.image %}
+    <div class="pub-thumb"><img src="{{ p.image | relative_url }}" alt="" loading="lazy" style="{% if p.image_fit %}object-fit: {{ p.image_fit }};{% endif %}{% if p.image_position %}object-position: {{ p.image_position }};{% endif %}"></div>
+    {% endif %}
+    <div>
+        <p class="title">{{ p.title }}</p>
+        <p class="authors">{{ p.authors | replace: me, me_bold }}</p>
+        <p class="venue">{{ p.venue }}{% if include.show_year %}, {{ p.year }}{% endif %}{% if p.rank %} <span class="rank" title="{% if p.type == "journal" %}SJR quartile{% else %}CORE conference ranking{% endif %}">{{ p.rank }}</span>{% endif %}</p>
+        {% if p.label or p.award %}
+        <div class="badges">
+            {% if p.label %}<span class="tag">{{ p.label }}</span>{% endif %}
+            {% if p.award %}{% if p.award_url %}<a class="award" href="{{ p.award_url }}" target="_blank" rel="noopener">{{ p.award }}</a>{% else %}<span class="award">{{ p.award }}</span>{% endif %}{% endif %}
+        </div>
+        {% endif %}
+        {% if p.pdf or p.doi or p.hal or p.video or p.code or p.url %}
+        <p class="links">
+            {% if p.pdf %}<a href="{{ p.pdf }}" target="_blank" rel="noopener">PDF</a>{% endif %}
+            {% if p.doi %}<a href="https://doi.org/{{ p.doi }}" target="_blank" rel="noopener">DOI</a>{% endif %}
+            {% if p.hal %}<a href="{{ p.hal }}" target="_blank" rel="noopener">HAL</a>{% endif %}
+            {% if p.video %}<a href="{{ p.video }}" target="_blank" rel="noopener">Video</a>{% endif %}
+            {% if p.code %}<a href="{{ p.code }}" target="_blank" rel="noopener">Code</a>{% endif %}
+            {% if p.url %}<a href="{{ p.url }}" target="_blank" rel="noopener">{{ p.url_label | default: "Link" }}</a>{% endif %}
+        </p>
+        {% endif %}
+    </div>
+</article>

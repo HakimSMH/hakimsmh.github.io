@@ -1,0 +1,30 @@
+<section class="block" id="news">
+    <h2>Latest news</h2>
+    {% assign latest = site.data.news | slice: 0, 5 %}
+    {% include dated.html items=latest %}
+</section>
+
+<section class="block" id="selected">
+    <div class="block-head">
+        <h2>Selected publications</h2>
+        <a class="more" href="{{ '/publications.html' | relative_url }}">All publications →</a>
+    </div>
+    {% assign featured = site.data.publications | where: "featured", true %}
+    <div class="pub-list">
+        {% for p in featured %}
+        {% include pub.html pub=p show_year=true %}
+        {% endfor %}
+    </div>
+</section>
+
+<section class="block" id="students">
+    <div class="block-head">
+        <h2>PhD students</h2>
+        <a class="more" href="{{ '/research.html#supervision' | relative_url }}">All supervision →</a>
+    </div>
+    <ul class="plain-list">
+        {% for s in site.data.supervision.phd %}
+        <li><strong>{{ s.name }}</strong> ({{ s.dates }}): <em>{{ s.topic }}</em>{% if s.status %}, {{ s.status }}{% endif %} · <span class="muted">{{ s.details | remove: "50% · " | remove: "20% · " }}</span></li>
+        {% endfor %}
+    </ul>
+</section>

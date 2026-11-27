@@ -1,0 +1,13 @@
+{% comment %} Generic dated list. Usage: {% include dated.html items=site.data.cv.awards %} {% endcomment %}
+<ul class="dated">
+    {% for it in include.items %}
+    <li>
+        <span class="date">{{ it.date }}</span>
+        <div>
+            <h3>{{ it.title }}</h3>
+            {% if it.where %}<span class="where">{{ it.where }}</span>{% endif %}
+            {% if it.text %}<div class="text">{{ it.text | markdownify }}</div>{% endif %}
+        </div>
+    </li>
+    {% endfor %}
+</ul>

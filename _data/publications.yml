@@ -1,0 +1,226 @@
+# ------------------------------------------------------------------
+#  PUBLICATIONS, newest first.
+#
+#  Copy-paste a block to add a paper. Fields:
+#    title, authors, venue, year   (required)
+#    type:     journal | conference | other   (used by the filter buttons)
+#    label:    optional small tag, e.g. "Patent", "Preprint", "PhD thesis", "Book chapter"
+#    featured: true  -> also listed in "Selected publications" on the home page
+#              (keep it to 4–5 papers: recent, high-impact or awarded)
+#    image, image_fit, image_position: optional illustration (not displayed for now)
+#    rank:     venue ranking (optional): CORE rank for conferences (e.g. "CORE A*", see
+#              portal.core.edu.au) or SJR quartile for journals (e.g. "Q1", see scimagojr.com)
+#    award:    text of an award badge (optional), award_url: link (optional)
+#    pdf, doi, hal, video, code, url: links (optional; only filled ones are shown)
+#  Your name is bolded automatically when written "H. Si-Mohammed".
+# ------------------------------------------------------------------
+
+- title: "The neurophysiology of cybersickness: a systematic review of neuromarkers, neurostimulation, and reporting practices in Virtual Reality"
+  authors: G. Van der Lee, F. Cabestaing, H. Si-Mohammed
+  venue: IEEE Transactions on Visualization and Computer Graphics
+  rank: Q1
+  year: 2026
+  type: journal
+  doi: 10.1109/TVCG.2026.3734375
+  hal: https://hal.science/hal-05763514
+
+- title: "Towards the automatic detection of vection in Virtual Reality using EEG"
+  authors: G. Van der Lee, A. Lécuyer, M. Naud, R. Scherer, F. Cabestaing, H. Si-Mohammed
+  venue: IEEE Transactions on Visualization and Computer Graphics
+  rank: Q1
+  year: 2026
+  type: journal
+  featured: true
+  doi: 10.1109/TVCG.2026.3675421
+  hal: https://hal.science/hal-05304254
+
+- title: "Visual ERP-based brain–computer interface use with severe physical, speech and eye movement impairments: case studies"
+  authors: A. Van Den Kerchove, J. Meunier, M. de Moura, A. Willemssens, D. Geeurickx, E. Schiettecatte, P. Van Damme, H. Si-Mohammed, F. Cabestaing, E. Allart, et al.
+  venue: Journal of NeuroEngineering and Rehabilitation, 23(1), 37
+  rank: Q1
+  year: 2026
+  type: journal
+  featured: true
+  doi: 10.1186/s12984-025-01836-0
+  hal: https://hal.science/hal-05486425
+
+- title: "The autonomic craving signature: a pattern of physiological signals associated with craving in daily life among tobacco, alcohol and cannabis users with SUD"
+  authors: E. Baillet-Gaborieau, F. Serre, H. Si-Mohammed, A. Chevalier, T. Monseigne, C. Jeunet-Kelway, M. Auriacombe
+  venue: Drug and Alcohol Dependence, 267, 112251
+  rank: Q1
+  year: 2025
+  type: journal
+
+- title: "Enhancing detection of acceleration-related ERPs in VR using spatial filtering techniques"
+  authors: G. Van der Lee, F. Cabestaing, H. Si-Mohammed
+  venue: 33rd European Signal Processing Conference (EUSIPCO), pp. 1662–1666
+  year: 2025
+  type: conference
+  doi: 10.23919/EUSIPCO63237.2025.11226526
+  hal: https://hal.science/hal-05304231
+
+- title: "EEG correlates of vection: a systematic literature review"
+  authors: G. Van der Lee, F. Cabestaing, H. Si-Mohammed
+  venue: IEEE MetroXRAINE, pp. 651–656
+  year: 2025
+  type: conference
+  doi: 10.1109/MetroXRAINE66377.2025.11340022
+  hal: https://hal.science/hal-05349906
+
+- title: "Interfaces cerveau-ordinateur et neurodroit : pour la protection des utilisateurs des neurotechnologies"
+  authors: H. Si-Mohammed
+  venue: "In: Vers un droit neuro-éthique ?, J. Sénéchal & S. Desvaux (eds.), Éditions IRJS"
+  year: 2025
+  type: other
+  label: Book chapter
+
+- title: "BTTDA: Block-Term Tensor Discriminant Analysis for brain-computer interfacing"
+  authors: A. Van Den Kerchove, H. Si-Mohammed, F. Cabestaing, M. M. Van Hulle
+  venue: arXiv:2511.04292
+  year: 2025
+  type: other
+  label: Preprint
+  url: https://arxiv.org/abs/2511.04292
+
+- title: "Correcting for ERP latency jitter improves gaze-independent BCI decoding"
+  authors: A. Van Den Kerchove, H. Si-Mohammed, M. Van Hulle, F. Cabestaing
+  venue: Journal of Neural Engineering, 21(4), 046013
+  rank: Q1
+  year: 2024
+  type: journal
+  featured: true
+  image: /img/pubs/jne2024.png
+  image_fit: contain   # wide figure: show it whole instead of cropping
+  doi: 10.1088/1741-2552/ad5ec0
+  pdf: https://hal.science/hal-04866502/file/main.pdf
+
+- title: "EEG markers of acceleration perception in Virtual Reality"
+  authors: G. Van der Lee, F. Cabestaing, A. Lécuyer, R. Scherer, H. Si-Mohammed
+  venue: 9th Graz Brain-Computer Interface Conference, pp. 249–253
+  year: 2024
+  type: conference
+  image: /img/pubs/graz2024.png
+  doi: 10.3217/978-3-99161-014-4-044
+  pdf: https://hal.science/hal-04796294/file/GBCIC_2024.pdf
+
+- title: "On the effect of size and contrast of SSVEP visual stimulations on classification accuracy and user-friendliness in Virtual Reality"
+  authors: H. Si-Mohammed, C. Holz, A. Wilson, H. Gamper, A. K. C. Lee, D. Emmanouilidou, E. Cutrell, I. Tashev
+  venue: 11th International Winter Conference on Brain-Computer Interface (BCI), IEEE
+  year: 2023
+  type: conference
+  image: /img/pubs/ssvep-vr2023.png
+  doi: 10.1109/BCI57258.2023.10078459
+  pdf: https://siplab.org/papers/bci2023-effect_of_size_and_contrast_of_SSVEP_in_VR.pdf
+
+- title: "An online tool to facilitate the assessment of BCI acceptability"
+  authors: L. Pillette, E. Grevet, C. Dussard, F. Amadieu, D. Gasq, E. Pierrieau, J. Py, H. Si-Mohammed, N. George, C. Jeunet-Kelway
+  venue: 10th International BCI Meeting
+  year: 2023
+  type: conference
+  image: /img/pubs/acceptability2023.png
+  doi: 10.3217/978-3-85125-962-9-164
+  pdf: https://hal.science/hal-04289425/file/BCIsociety2023_Pillette.pdf
+  url: https://bci-acceptability-tool.cnrs.fr/
+  url_label: Online tool
+
+- title: "Designing functional prototypes combining BCI and AR for home automation"
+  authors: H. Si-Mohammed, C. Haumont, A. Sanchez, C. Plapous, F. Bouchnak, J.-P. Javaudin, A. Lécuyer
+  venue: International Conference on Virtual Reality and Mixed Reality (EuroXR), Springer, pp. 3–21
+  year: 2022
+  type: conference
+  image: /img/projects/home-automation.jpg
+  doi: 10.1007/978-3-031-16234-3_1
+  pdf: https://hal.science/hal-03928273/document
+  video: https://www.inria.fr/fr/piloter-la-maison-connectee-par-le-cerveau
+
+- title: "Preliminary study for intonation classification of imagined speech for brain-computer interface applications"
+  authors: I. Casso, J. Rouillard, H. Si-Mohammed, N. Betrouni, F. Cabestaing, A. Basirat
+  venue: 30th European Signal Processing Conference (EUSIPCO)
+  year: 2022
+  type: conference
+  doi: 10.23919/EUSIPCO55093.2022.9909933
+  hal: https://hal.science/hal-03769268
+
+- title: "Periodic motion-based visual stimulus"
+  authors: A. D. Wilson, H. Si-Mohammed, C. Holz, A. K. C. Lee, I. J. Tashev, H. Gamper, E. B. Cutrell, D. E. Johnston, D. Emmanouilidou, M. R. Jalobeanu, et al.
+  venue: US Patent 11,409,361
+  year: 2022
+  type: other
+  label: Patent
+
+- title: "Alfred: the haptic butler, on-demand tangibles for object manipulation in Virtual Reality using an ETHD"
+  authors: V. R. Mercado, T. Howard, H. Si-Mohammed, F. Argelaguet, A. Lécuyer
+  venue: IEEE World Haptics Conference (WHC), pp. 373–378
+  year: 2021
+  type: conference
+  image: /img/pubs/alfred2021.jpg
+  doi: 10.1109/WHC49131.2021.9517250
+  pdf: https://inria.hal.science/hal-03469115/document
+  video: https://www.youtube.com/watch?v=-cioXiJWBwU
+
+- title: "Detecting system errors in Virtual Reality using EEG through error-related potentials"
+  authors: H. Si-Mohammed, C. Lopes-Dias, M. Duarte, F. Argelaguet, C. Jeunet, G. Casiez, G. R. Müller-Putz, A. Lécuyer, R. Scherer
+  venue: IEEE Conference on Virtual Reality and 3D User Interfaces (IEEE VR)
+  year: 2020
+  type: conference
+  featured: true
+  rank: CORE A*
+  image: /img/pubs/errp-vr2020.jpg
+  award: Best Conference Paper Award
+  award_url: https://ieeevr.org/2020/awards/conference.html
+  doi: 10.1109/VR46266.2020.00088
+  pdf: https://hal.archives-ouvertes.fr/hal-02919928/file/camera_ready.pdf
+  video: https://youtu.be/F0j2q8lPLOg
+
+- title: "Decoding auditory and tactile attention for use in an EEG-based brain-computer interface"
+  authors: W. W. An, H. Si-Mohammed, N. Huang, H. Gamper, A. K. C. Lee, C. Holz, D. Johnston, M. Jalobeanu, D. Emmanouilidou, E. Cutrell, et al.
+  venue: 8th International Winter Conference on Brain-Computer Interface (BCI), IEEE
+  year: 2020
+  type: conference
+  hal: https://inria.hal.science/hal-02505620
+
+- title: "Design and study of interactive systems based on brain-computer interfaces and augmented reality"
+  authors: H. Si-Mohammed
+  venue: PhD thesis, INSA Rennes / Inria
+  year: 2019
+  type: other
+  label: PhD thesis
+  award: 1st PhD Thesis Prize, Fondation Rennes 1
+  award_url: https://fondation.univ-rennes1.fr/la-fondation-rennes-1-remet-ses-prix-de-these-2019-8-docteurs-de-luniversite-de-rennes-1#p-997
+  hal: https://theses.hal.science/tel-03181729
+
+- title: "Defining brain-computer interfaces: a human-computer interaction perspective"
+  authors: H. Si-Mohammed, G. Casiez, F. Argelaguet, N. Roussel, A. Lécuyer
+  venue: 8th Graz Brain-Computer Interface Conference
+  year: 2019
+  type: conference
+  pdf: https://hal.inria.fr/hal-02163771/file/CameraReady.pdf
+
+- title: "Towards BCI-based interfaces for augmented reality: feasibility, design and evaluation"
+  authors: H. Si-Mohammed, J. Petit, C. Jeunet, F. Argelaguet, F. Spindler, A. Evain, N. Roussel, G. Casiez, A. Lécuyer
+  venue: IEEE Transactions on Visualization and Computer Graphics, 26(3), pp. 1608–1621
+  rank: Q1
+  year: 2018
+  type: journal
+  featured: true
+  image: /img/pubs/tvcg2018.png
+  doi: 10.1109/TVCG.2018.2873737
+  pdf: https://hal.inria.fr/hal-01947344/file/Manuscript.pdf
+  video: https://www.youtube.com/watch?v=-9Wb1sJQdxU
+
+- title: "Toward intuitive 3D user interfaces for climbing, flying and stacking"
+  authors: A. Bernardin, G. Cortes, R. Fribourg, T. Luong, F. Nouviale, H. Si-Mohammed
+  venue: IEEE VR 2018, 3DUI Contest
+  year: 2018
+  type: conference
+  award: Honorable Mention
+  doi: 10.1109/VR.2018.8446047
+  hal: https://inria.hal.science/hal-01949784
+
+- title: "Brain-computer interfaces and augmented reality: a state of the art"
+  authors: H. Si-Mohammed, F. Argelaguet, G. Casiez, N. Roussel, A. Lécuyer
+  venue: 7th Graz Brain-Computer Interface Conference
+  year: 2017
+  type: conference
+  doi: 10.3217/978-3-85125-533-1-82
+  hal: https://inria.hal.science/hal-01625167

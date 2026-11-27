@@ -1,0 +1,58 @@
+# ------------------------------------------------------------------
+#  RESEARCH SUPERVISION: shown on the Research page (and PhD students
+#  on the home page). Newest first.
+# ------------------------------------------------------------------
+
+# Set `open: true` and fill `offers` to display an "Open positions" box.
+positions:
+  open: false
+  text: >-
+    I regularly offer Master's internships and PhD positions on BCIs and immersive
+    systems. Feel free to contact me with a CV and a short statement of interest.
+  offers: []
+  #  - title: "M2 internship: EEG-based detection of cybersickness"
+  #    url: /files/offer-2027.pdf
+
+phd:
+  - name: Rakib Hasan
+    dates: 2026–2029
+    topic: Safeguarding privacy in neurotechnologies through EEG anonymization
+    status: ongoing
+    details: 50% · co-supervised with Pr. F. Cabestaing · funded by LOOP
+  - name: Gaël Van der Lee
+    dates: 2022–2025
+    topic: Passive BCI for neuromarker detection and UX improvement in Virtual Reality
+    status: defended Dec. 2025
+    details: 50% · co-supervised with Pr. F. Cabestaing · funded by GENESIS
+  - name: Arne Van Den Kerchove
+    dates: 2021–2024
+    topic: A visual Brain-Computer Interface for gaze-free communication
+    status: defended Dec. 2024
+    details: 20% · with Pr. F. Cabestaing & Pr. M. Van Hulle · joint degree with KU Leuven
+
+# Master's research internships (selection)
+masters:
+  - year: 2026
+    name: Rakib Hasan
+    topic: Resynthesis-based anonymization of EEG data
+    details: co-supervised with Dr. M. Maouche (Inria Lyon) · continuing as a PhD student
+  - year: 2024
+    name: Adel Toumi
+    topic: Dynamic EEG classification using successive covariance matrices
+    details: M2, ESI Algiers
+  - year: 2022
+    name: Valentin Sauvage
+    topic: VR-based neurofeedback for motor imagery training
+    details: M2, Univ. Lille
+  - year: 2021
+    name: Maxence Naud
+    topic: Perturbation-evoked potentials for cybersickness anticipation
+    details: M2, ENSTA Paris · now engineer at CEA Paris-Saclay
+  - year: 2019
+    name: Jimmy Petit
+    topic: Covert visual attention and SSVEP for BCI target selection
+    details: M2, ENS Rennes · later PhD (Lille) and postdoc at Harvard Medical School
+  - year: 2018
+    name: Martin Guy
+    topic: "Brain-House Interface: BCIs for home automation"
+    details: M2, ENS Lyon · later PhD at École Centrale Nantes

@@ -1,0 +1,99 @@
+# ------------------------------------------------------------------
+#  CV page, newest first in each list. `text` accepts Markdown.
+# ------------------------------------------------------------------
+
+experience:
+  - date: since 2026
+    title: Head of the BCI & Neuroprosthetics Axis
+    where: Lille NeurotechS Institute, University of Lille
+  - date: since 2026
+    title: Deputy Director
+    where: CNRS Research Federation Visual Sciences and Digital Cultures (SCV)
+  - date: since 2020
+    title: Associate Professor
+    where: University of Lille, CRIStAL (UMR CNRS 9189) · Faculty of Science and Technology (FST), EEA department
+    text: EEG-based BCIs and immersive technologies, with an emphasis on real-time neuroadaptive systems.
+  - date: 2019–2020
+    title: Postdoctoral Researcher
+    where: Inria Rennes
+    text: "ANR Lobbybot project: encounter-type haptic devices in Virtual Reality."
+  - date: "2019"
+    title: Research Intern
+    where: Microsoft Research, Redmond
+    text: Real-world-inspired animations for pleasant SSVEP-based BCIs.
+  - date: "2018"
+    title: Visiting PhD Student
+    where: TU Graz
+    text: Detection and use of error-related potentials in Virtual Reality.
+  - date: 2016–2019
+    title: PhD Candidate
+    where: Inria & INSA Rennes, IPL BCI-LIFT
+    text: "*Design and Study of Interactive Systems based on Brain-Computer Interfaces and Augmented Reality.*"
+
+education:
+  # Add your HDR here when obtained, e.g.:
+  # - date: "2027"
+  #   title: Habilitation to supervise research (HDR)
+  #   where: University of Lille
+  - date: "2019"
+    title: PhD in Computer Science
+    where: INSA Rennes / Inria
+  - date: "2016"
+    title: Master's degree & State Engineer's degree
+    where: ESI Algiers, High Honors
+
+awards:
+  - date: "2020"
+    title: Best Conference Paper Award
+    where: IEEE VR 2020
+  - date: "2020"
+    title: 1st PhD Thesis Prize
+    where: Fondation Rennes 1, Mathematics, Sciences & ICT
+  - date: "2020"
+    title: ETH Fellowship
+    where: ETH Zürich (awarded, declined to take up current position)
+  - date: "2018"
+    title: Honorable Mention, 3DUI Contest
+    where: IEEE VR 2018
+
+talks:
+  - date: "2026"
+    title: "Bridging neurotechnology with immersive systems: getting BCIs outside of the lab?"
+    where: Microsoft Research, Redmond, USA
+  - date: "2024"
+    title: Passive BCIs for cybersickness detection in Virtual Reality
+    where: Psy'Novons, Annual Congress of the Neurofeedback Society (NExT), Paris
+  - date: "2024"
+    title: Workshop on Presence Detection in Extended Reality
+    where: Invited participant, Berlin
+  - date: "2024"
+    title: "BCI and immersive systems: design and evaluation"
+    where: Guest lecture, University of South Australia (remote)
+  - date: "2023"
+    title: "Brain-computer interfaces and neuroethics: towards a neuro-law"
+    where: Sorbonne Université, Paris
+
+service:
+  - heading: Community
+    items:
+      - "**President of the Organizing Committee**, Journées CORTICO 2026, LILLIAD, Univ. Lille"
+      - "**Secretary General**, CORTICO, French BCI Research Collective (since 2023); board member since 2020"
+  - heading: Program committees
+    items:
+      - "**IEEE VR**, 2022 to 2027"
+      - "**IEEE ISMAR**, 2027"
+      - Neuroergonomics Conference, Bordeaux, 2024
+      - Graz BCI Conference, 2019
+  - heading: Reviewing & expertise
+    items:
+      - "**Journals**: Journal of Neural Engineering, IEEE TBME, IEEE TVCG"
+      - "**Conferences**: IEEE ISMAR, ACM CHI, ACM UIST"
+      - "**Funding agencies**: ANR (France), FFG (Austria), NSERC (Canada)"
+      - "**Thesis juries**: N. Abo Alzahab, Università Politecnica delle Marche (reviewer, 2025); E. Baillet, Univ. Bordeaux (2024)"
+      - "**PhD monitoring committees**: IMT Atlantique, Capgemini (CIFRE), Inria Rennes, ISAE-Supaero"
+  - heading: Event organization
+    items:
+      - Brain, Society and Technology Graduate Program (2026)
+      - NeurotechEU Autumn School on Closed-Loop Neurotechnologies (2023, 2025)
+      - 4th International OpenViBE Workshop, Neuroergonomics 2021
+      - "Workshop “Combining Mixed Reality and BCIs: Challenges and Opportunities”, IEEE ISMAR 2020"

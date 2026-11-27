@@ -1,0 +1,26 @@
+{% assign a = site.author %}
+<aside class="profile" aria-label="Profile">
+    <a href="{{ '/' | relative_url }}" class="profile-photo">
+        <img src="{{ a.photo | relative_url }}" alt="Portrait of {{ a.name }}" width="720" height="480">
+    </a>
+    <div class="profile-id">
+        <a class="profile-name" href="{{ '/' | relative_url }}">{{ a.name }}</a>
+        {% for r in a.roles %}<p class="profile-role">{{ r }}</p>{% endfor %}
+    </div>
+
+    <ul class="profile-contact">
+        <li>{% include email.html %}</li>
+        {% if a.phone %}<li class="muted">{{ a.phone }}</li>{% endif %}
+        {% if a.address %}<li class="muted address">{% if a.office and a.office != "" %}{{ a.office }}<br>{% endif %}{{ a.address | join: "<br>" }}</li>{% endif %}
+    </ul>
+
+    <ul class="profile-links">
+        {% for l in a.links %}{% if l.url and l.url != "" %}
+        <li><a href="{{ l.url }}" target="_blank" rel="noopener">{{ l.label }}</a></li>
+        {% endif %}{% endfor %}
+    </ul>
+
+    {% if a.cv_pdf %}
+    <a class="btn btn-block" href="{{ a.cv_pdf | relative_url }}">Download CV (PDF)</a>
+    {% endif %}
+</aside>

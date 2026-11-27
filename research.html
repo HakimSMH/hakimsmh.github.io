@@ -1,0 +1,74 @@
+---
+layout: default
+title: Research
+description: "Research projects and student supervision of Hakim Si-Mohammed: LOOP, GENESIS, PEPCY, PhD and Master's research internships."
+---
+{% assign sup = site.data.supervision %}
+<header class="page-head">
+    <h1>Research</h1>
+    <p class="lead">Interdisciplinary projects connecting EEG, brain-computer interfaces and immersive technologies, with a growing focus on clinical and societal impact, and the students who carry them out.</p>
+</header>
+
+{% if sup.positions.open %}
+<aside class="notice">
+    <h2>Open positions</h2>
+    <p>{{ sup.positions.text }}</p>
+    {% if sup.positions.offers %}<ul class="plain-list">{% for o in sup.positions.offers %}<li><a href="{{ o.url | relative_url }}">{{ o.title }}</a></li>{% endfor %}</ul>{% endif %}
+</aside>
+{% endif %}
+
+{% assign groups = "current,past" | split: "," %}
+{% for g in groups %}
+{% assign list = site.data.projects | where: "status", g %}
+{% if list.size > 0 %}
+<section class="block"{% if forloop.first %} id="projects"{% endif %}>
+    <h2>{% if g == "current" %}Current projects{% else %}Past projects{% endif %}</h2>
+    {% for pr in list %}
+    <article class="project{% if pr.image %} has-image{% endif %}">
+        <div class="project-body">
+            <p class="project-meta"><span class="date">{{ pr.dates }}</span> · {{ pr.role }}</p>
+            <h3>{% if pr.url %}<a href="{{ pr.url }}" target="_blank" rel="noopener">{{ pr.name }}</a>{% else %}{{ pr.name }}{% endif %}</h3>
+            <p class="subtitle">{{ pr.subtitle }}</p>
+            <p>{{ pr.description }}</p>
+            {% if pr.facts %}
+            <dl class="facts">
+                {% for f in pr.facts %}<dt>{{ f.label }}</dt><dd>{{ f.value | markdownify | remove: "<p>" | remove: "</p>" }}</dd>{% endfor %}
+            </dl>
+            {% endif %}
+        </div>
+        {% if pr.image %}<figure class="project-image"><img src="{{ pr.image | relative_url }}" alt="Illustration of the {{ pr.name }} project" loading="lazy"></figure>{% endif %}
+    </article>
+    {% endfor %}
+</section>
+{% endif %}
+{% endfor %}
+
+<section class="block" id="supervision">
+    <h2>Supervision</h2>
+    <p class="subhead">PhD students</p>
+    <ul class="dated">
+        {% for s in sup.phd %}
+        <li>
+            <span class="date">{{ s.dates }}</span>
+            <div>
+                <h3>{{ s.name }}</h3>
+                <div class="text"><p><em>{{ s.topic }}</em>{% if s.status %} ({{ s.status }}){% endif %}</p></div>
+                <span class="where">{{ s.details }}</span>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <p class="subhead">Master's research internships (selection)</p>
+    <ul class="dated">
+        {% for s in sup.masters %}
+        <li>
+            <span class="date">{{ s.year }}</span>
+            <div>
+                <h3>{{ s.name }}</h3>
+                <div class="text"><p><em>{{ s.topic }}</em>. {{ s.details }}</p></div>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
+</section>

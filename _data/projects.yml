@@ -1,0 +1,82 @@
+# ------------------------------------------------------------------
+#  PROJECTS, newest first.
+#  Optional fields: image, url, facts (list of label/value; values accept Markdown).
+#  status: current | past
+# ------------------------------------------------------------------
+
+- name: LOOP
+  subtitle: "Closed-Loop Neurotechnologies: from sensors to applications"
+  dates: 2026–2029
+  role: Work-package leader
+  status: current
+  description: >-
+    A cross-disciplinary project bringing together the theoretical, technological
+    and clinical expertise of the University of Lille in neurotechnology, with the
+    goal of alleviating severe psychiatric symptoms.
+  facts:
+    - label: Funding
+      value: Université de Lille, Cross-Disciplinary Project
+    - label: Partners
+      value: CRIStAL, CHU Lille and affiliated laboratories
+
+- name: GENESIS
+  subtitle: Leveraging neuromarkers for next-generation immersive systems
+  dates: 2022–2025
+  role: Coordinator of a 5-partner European consortium
+  status: past
+  image: /img/projects/genesis.png
+  url: https://www.chistera.eu/projects/genesis
+  description: >-
+    GENESIS paves the way for a new generation of VR systems that use a passive BCI
+    to estimate users' mental states through real-time EEG classification. The goal
+    is to level up immersion by reducing or preventing cybersickness, and to increase
+    embodiment by adapting virtual content to the user's state.
+  facts:
+    - label: Funding
+      value: "[CHIST-ERA](https://www.chistera.eu/projects/genesis) European call, €743k (22% success rate)"
+    - label: Consortium
+      value: "[University of Lille](https://bci.univ-lille.fr/en/) (FR), [ETH Zürich](https://siplab.org/) (CH), [Inria](https://team.inria.fr/hybrid/) (FR), [Koç University](https://iui.ku.edu.tr/) (TR), [University of Essex](http://essexbcis.uk/) (UK)"
+
+- name: PEPCY
+  subtitle: Perturbation-evoked potentials for detecting and palliating cybersickness
+  dates: "2021"
+  role: Coordinator
+  status: past
+  image: /img/projects/pepcy.png
+  description: >-
+    An exploratory project on the objective detection of cybersickness from EEG.
+    It focuses on perturbation-evoked potentials, which appear when balance is
+    lost, to anticipate the onset of symptoms, with the longer-term aim of adapting
+    the virtual display to mitigate them.
+  facts:
+    - label: Funding
+      value: CNRS INS2I exploratory grant
+
+- name: BCI × AR Home Automation
+  subtitle: Controlling a smart home with an SSVEP-based BCI and Augmented Reality
+  dates: "2019"
+  role: Industrial project
+  status: past
+  image: /img/projects/home-automation.jpg
+  description: >-
+    In collaboration with Orange and Inria Tech, we integrated an SSVEP-based BCI
+    with an AR interface to interact directly with smart appliances in a home
+    environment designed by Orange, resulting in a fully functional prototype.
+  facts:
+    - label: Partners
+      value: Orange, Inria Tech
+    - label: More
+      value: "[Inria feature (FR)](https://www.inria.fr/fr/piloter-la-maison-connectee-par-le-cerveau) · [EuroXR 2022 paper](https://hal.science/hal-03928273)"
+
+- name: BCI-LIFT
+  subtitle: Interactive systems based on BCIs and Augmented Reality
+  dates: 2016–2019
+  role: PhD project
+  status: past
+  description: >-
+    My doctoral work, carried out within the Inria Project Lab BCI-LIFT, explored how
+    BCIs and AR can be combined, from feasibility and design to user evaluation.
+    It received the 1st PhD Thesis Prize of the Fondation Rennes 1.
+  facts:
+    - label: Thesis
+      value: "[HAL tel-03181729](https://theses.hal.science/tel-03181729)"

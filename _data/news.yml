@@ -1,0 +1,44 @@
+# ------------------------------------------------------------------
+#  NEWS, newest first. The home page shows the first 6.
+#  `text` accepts Markdown, e.g. [a link](https://...).
+# ------------------------------------------------------------------
+
+- date: Jun 2026
+  title: Invited talk at Microsoft Research
+  where: Redmond, USA
+  text: "“Bridging Neurotechnology with Immersive Systems: Getting BCIs outside of the lab?”"
+
+- date: May 2026
+  title: Head of the BCI & Neuroprosthetics Axis
+  where: Lille NeurotechS Institute, University of Lille
+  text: Leading the research axis that brings together academic and clinical partners around neurotechnology in Lille.
+
+- date: 2026
+  title: Two papers in IEEE TVCG
+  where: With Gaël Van der Lee et al.
+  text: On the [automatic detection of vection](https://hal.science/hal-05304254) using EEG, and a [systematic review of the neurophysiology of cybersickness](https://hal.science/hal-05763514).
+
+- date: 2026
+  title: Journées CORTICO 2026 in Lille
+  where: LILLIAD, University of Lille
+  text: Chairing the organizing committee of the annual meeting of the French BCI research community.
+
+- date: Jan 2026
+  title: Deputy Director of the SCV Research Federation
+  where: CNRS & University of Lille
+  text: Joining the leadership of the Visual Sciences and Digital Cultures federation, which brings together three joint research units.
+
+- date: Jan 2026
+  title: Start of the LOOP project
+  where: University of Lille
+  text: Work-package leader in this cross-disciplinary project on closed-loop neurotechnologies.
+
+- date: Dec 2025
+  title: PhD defense of Gaël Van der Lee
+  where: University of Lille
+  text: "*Passive BCI for neuromarker detection and UX improvement in Virtual Reality*, funded by the GENESIS project. Congratulations Gaël!"
+
+- date: Dec 2024
+  title: PhD defense of Arne Van Den Kerchove
+  where: University of Lille & KU Leuven
+  text: "*A visual Brain-Computer Interface for gaze-free communication*. Congratulations Arne!"

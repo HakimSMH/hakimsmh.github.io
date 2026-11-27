@@ -1,0 +1,40 @@
+---
+layout: default
+title: CV
+description: "Curriculum vitae of Hakim Si-Mohammed: experience, education, awards, invited talks and scientific service."
+---
+{% assign cv = site.data.cv %}
+<header class="page-head">
+    <h1>Curriculum vitae</h1>
+    <p class="lead">Experience, distinctions and service to the research community.{% if site.author.cv_pdf %} A complete version is available as a <a href="{{ site.author.cv_pdf | relative_url }}">PDF</a>.{% endif %}</p>
+</header>
+
+<section class="block" id="experience">
+    <h2>Experience</h2>
+    {% include dated.html items=cv.experience %}
+</section>
+
+<section class="block" id="education">
+    <h2>Education</h2>
+    {% include dated.html items=cv.education %}
+</section>
+
+<section class="block" id="awards">
+    <h2>Awards</h2>
+    {% include dated.html items=cv.awards %}
+</section>
+
+<section class="block" id="talks">
+    <h2>Invited talks</h2>
+    {% include dated.html items=cv.talks %}
+</section>
+
+<section class="block" id="service">
+    <h2>Scientific service</h2>
+    {% for g in cv.service %}
+    <p class="subhead">{{ g.heading }}</p>
+    <ul class="plain-list">
+        {% for it in g.items %}<li>{{ it | markdownify | remove: "<p>" | remove: "</p>" }}</li>{% endfor %}
+    </ul>
+    {% endfor %}
+</section>

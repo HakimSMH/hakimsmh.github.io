@@ -1,0 +1,9 @@
+{%- comment -%}
+  Spam-protected e-mail link: the address is written reversed in the HTML and
+  rebuilt by a small script (see default layout). Usage:
+  {% include email.html %}  or  {% include email.html text="contact me" %}
+{%- endcomment -%}
+{%- assign e = site.author.email -%}
+{%- assign rev = e | split: "" | reverse | join: "" -%}
+{%- assign parts = e | split: "@" -%}
+<a class="js-email" href="#" data-e="{{ rev }}"{% if include.text %} data-keep="1"{% endif %}>{{ include.text | default: parts[0] | append: "" }}{% unless include.text %} [at] {{ parts[1] }}{% endunless %}</a>

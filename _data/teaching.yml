@@ -1,0 +1,60 @@
+# ------------------------------------------------------------------
+#  TEACHING: courses, programmes, schools and course materials.
+#  (Research supervision is in _data/supervision.yml.)
+# ------------------------------------------------------------------
+
+# Courses currently taught. Optional `materials:` = link to the course
+# resources (e.g. a file in /files/teaching/ or an external page).
+courses:
+  - level: M2
+    name: Connected Assistance Systems
+    topic: Virtual Reality and digital twins
+  - level: M2
+    name: Embedded Systems
+    topic: Embedded system design
+  - level: M2
+    name: Field Networks
+    topic: Network protocols for embedded systems
+  - level: M1
+    name: Industrial Interfaces
+    topic: GUI design and HCI fundamentals
+  - level: M1
+    name: Microcontrollers
+    topic: Microcontroller architecture and assembly
+  - level: L3
+    name: Industrial Computing
+    topic: Computer architecture, Arduino projects
+
+programs:
+  - date: From 2027
+    title: European Master of Neurotechnology
+    where: NeurotechEU
+    text: Starting Sept. 2027. Domain leader for “Technology” and member of the Central Teaching Committee.
+  - date: From 2026
+    title: Closed-Loop Neurotechnologies graduate programme
+    where: University of Lille
+    text: Starting Sept. 2026. Contributor to the programme design; responsible for Brain-Computer Interface teaching.
+
+schools:
+  - "**Brain, Society and Technology Graduate Program** (2026): member of the organizing committee"
+  - "**NeurotechEU Autumn School “Closed-Loop Neurotechnologies”** (2022, 2025): lecture on neurotechnology design in VR"
+  - "**NeurotechEU Blended Intensive Program on BCI & Robotics**: lecture on VR/BCI and hands-on session at Boğaziçi University"
+  - "**Guest lecture**, University of South Australia (2024), “BCI and immersive systems: design and evaluation”"
+
+# ------------------------------------------------------------------
+#  COURSE MATERIALS & RESOURCES: shown on the Teaching page as soon as
+#  the list is not empty. Put files in /files/teaching/ (PDF, slides, zip…).
+#  Each item: title, course (optional), level (optional), year (optional),
+#  text (optional, Markdown), links: list of {label, url}.
+# ------------------------------------------------------------------
+resources: []
+#  - title: Introduction to Virtual Reality
+#    course: Connected Assistance Systems
+#    level: M2
+#    year: 2026–2027
+#    text: Lecture slides and lab instructions (Unity).
+#    links:
+#      - label: Slides
+#        url: /files/teaching/vr-intro.pdf
+#      - label: Lab
+#        url: /files/teaching/vr-lab1.pdf

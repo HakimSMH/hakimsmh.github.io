@@ -3,11 +3,6 @@
 #  `text` accepts Markdown, e.g. [a link](https://...).
 # ------------------------------------------------------------------
 
-- date: Jun 2026
-  title: Invited talk at Microsoft Research
-  where: Redmond, USA
-  text: "“Bridging Neurotechnology with Immersive Systems: Getting BCIs outside of the lab?”"
-
 - date: May 2026
   title: Head of the BCI & Neuroprosthetics Axis
   where: Lille NeurotechS Institute, University of Lille
@@ -22,6 +17,11 @@
   title: Journées CORTICO 2026 in Lille
   where: LILLIAD, University of Lille
   text: Chairing the organizing committee of the annual meeting of the French BCI research community.
+
+- date: Feb 2026
+  title: Invited talk at Microsoft Research
+  where: Redmond, USA
+  text: "“Bridging Neurotechnology with Immersive Systems: Getting BCIs outside of the lab?”"
 
 - date: Jan 2026
   title: Deputy Director of the SCV Research Federation
